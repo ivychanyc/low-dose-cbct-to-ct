@@ -4,8 +4,11 @@ This PyTorch implementation is adapted from the original cycleGAN open source fo
 
 ## Getting started
 
+```
 git clone https://gitlab.lrz.de/0000000001355093/cbct-to-ct-cyclegan.git
 $ cd CBCT-to-CT cycleGAN
+```
+
 
 If connected with research server sith SSH, we recommend using MONAI container for this project
 
@@ -19,10 +22,11 @@ $ pip install -r requirements.txt.
 
 ## Data
 Data should be placed in folders in the following path:
-> data/datasets/trainA
-> data/datasets/trainB
-> data/datasets/testA
-> data/datasets/testB
+data/datasets/trainA
+data/datasets/trainB
+data/datasets/testA
+data/datasets/testB
+
 
 
 ## Run Visdom server for training monitoring
