@@ -5,8 +5,8 @@ This PyTorch implementation is adapted from the original cycleGAN open source fo
 ## Getting started
 
 ```
-git clone https://gitlab.lrz.de/0000000001355093/cbct-to-ct-cyclegan.git
-$ cd CBCT-to-CT cycleGAN
+git clone https://github.com/ivychanyc/low-dose-cbct-to-ct/
+$ cd CBCT-to-CT_cycleGAN
 ```
 
 ## Docker
