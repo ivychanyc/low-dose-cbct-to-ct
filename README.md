@@ -30,6 +30,9 @@ data/datasets/testA
 data/datasets/testB
 ```
 
+## Pre-processing
+In CT_images_pre-processing.ipynb, we resampled CT images into CBCT image grid and store all axial slices into 16-bit PNG images.
+
 ## Run Visdom server for training monitoring
 `python -m visdom.server`
 
@@ -44,6 +47,21 @@ An example command to run test.py with hyperparameters,
 Note: specify the number of epoch, number testing slices and a folder path for the converted images
 
 `python /data/test.py --dataroot /data/data/datasets/CBCT2CT/ --name model_01 --gpu_ids 1 --epoch 250 --num_test 5850 --results_dir /data/results_train`
+
+## Evaluation
+Mean Error (ME) and Mean Absolute Error (MAE) can be used to evaluate the synthetic CT
+
+cycleGAN-analysis.ipynb
+This evaluation code is intended to choose the best epoch, one can use 3 validation data to ensemble every 10th epoch of the models.
+
+cycleGAN-analysis-histogramMAEME.ipynb  
+This is to plot different ME and MAE of individual testing datasets.
+
+
+
+
+
+
 
 
 
