@@ -9,10 +9,11 @@ git clone https://gitlab.lrz.de/0000000001355093/cbct-to-ct-cyclegan.git
 $ cd CBCT-to-CT cycleGAN
 ```
 
+## Docker
 
 If connected with research server sith SSH, we recommend using MONAI container for this project
 
-`$ docker run --gpus all -v /home/your_user_name_here/your_folder_here:/data -ti projectmonai/monai:latest`
+`docker run --gpus all -v /home/your_user_name_here/your_folder_here:/data -ti projectmonai/monai:latest`
 
 For example, we can run docker container in the server:
 `docker run --gpus all --shm-size 40G -p 8028:8097 -p 8026:8888 -p 8830:6006 -v /project_data/cbct/low_dose_cbct/cycleGAN/:/data --rm -ti projectmonai/monai:0.1.0`
