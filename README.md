@@ -38,13 +38,13 @@ data/datasets/testB
 An example command to run train.py with hyperparameters, 
 Note: the container is /data
 
-`python /data/train.py --dataroot /data/data/datasets/CBCT2CT_subselect_FS_updated/ --name modelCUT_subselectFS_10NCE --gpu_ids 1 `
+`python /data/train.py --dataroot /data/data/datasets/CBCT2CT/ --name model_01 --gpu_ids 1 `
 
 ## Test
 An example command to run test.py with hyperparameters, 
-Note: the container is /data
+Note: specify the number of epoch, number testing slices and a folder path for the converted images
 
-`python /data/test.py --dataroot /data/data/datasets/CBCT2CT_subselect_FS_updated/ --name modelCUT_subselectFS_10NCE --gpu_ids 1 --epoch 250 --num_test 5850 --results_dir /data/results_train`
+`python /data/test.py --dataroot /data/data/datasets/CBCT2CT/ --name model_01 --gpu_ids 1 --epoch 250 --num_test 5850 --results_dir /data/results_train`
 
 
 
