@@ -4,4 +4,5 @@ This PyTorch implementation is adapted from the original cycleGAN open source fo
 
 ## Getting started
 
-git clone https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix
+git clone git@gitlab.lrz.de:0000000001355093/cbct-to-ct-cyclegan.git
+
